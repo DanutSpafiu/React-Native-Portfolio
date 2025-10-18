@@ -10,11 +10,30 @@ const About = () => {
   return (
     <ThemedView style={styles.container}>
 
-      <Text style={styles.text}>Ce ar trebui sa stii despre mine?</Text>
+      <Text style={[styles.text, {color: theme.text}]}>Ce ar trebui sa stii despre mine?</Text>
       
-      <Text style={styles.descriere}>Principalele mele pasiuni sunt mobile si web development.</Text>
-      <Text style={styles.descriere}>.</Text>
-      {/**
+      <Link 
+            href="/educatie"
+            style={styles.buttonContainer}
+            asChild
+          ><Text style={styles.buttonText}>Educatie</Text>
+          </Link>
+
+          <Link 
+            href="/proiecte"
+            style={styles.buttonContainer}
+            asChild
+          ><Text style={styles.buttonText}>Proiecte Personale</Text>
+          </Link>
+         
+            <Link 
+            href="/pasiuni"
+            style={styles.buttonContainer}
+            asChild
+          ><Text style={styles.buttonText}>Pasiuni</Text>
+          </Link>
+
+          {/**
       <Link 
       style={styles.link}
       href="/">Home</Link>
@@ -33,7 +52,7 @@ const styles = StyleSheet.create({
     container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
 
   },
   text: {
@@ -41,7 +60,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontStyle:'italic',
     fontSize: 18,
-    padding: 10
+    padding: 10 
   },
  link: {
     padding: 2,
@@ -52,5 +71,19 @@ const styles = StyleSheet.create({
   descriere: {
    fontFamily: 'Arial',
    fontSize: 13,
+   padding: 5,
+  },
+   buttonContainer: {
+  paddingHorizontal: 30,
+  paddingVertical: 1,
+  borderRadius: 8,
+  marginTop: 30,
+},
+  buttonText: {
+  fontWeight: '600',
+  fontSize: 16,
+  textDecorationLine: 'underline',
+  fontFamily: 'Arial',
+  paddingTop: 0
   }
 })

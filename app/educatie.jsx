@@ -5,37 +5,17 @@ import {Link, Stack} from 'expo-router'
 import { Colors } from '../constants/colors'
 import ThemedView from '../components/ThemedView'
 
-const Home = () => {
-  const colorScheme = useColorScheme();
-  const theme = Colors[colorScheme] ?? Colors.light
-  
+const educatie = () => {
+      const colorScheme = useColorScheme();
+      const theme = Colors[colorScheme] ?? Colors.light
   return (
     <ThemedView style={styles.container}>
-      
-      <Image
-      source={Logo}
-      style={styles.img}
-      />
      
-     <Text style={[styles.title, {color: theme.title}]}>Salut, eu sunt Danut Spafiu!</Text>
-    <Text style={styles.subtitle}>Sunt student in anul 2 la Facultatea de Automatica si Calculatoare si sunt pasionat de mobile development.</Text>
-    <Text style={styles.text}>Dar povestesc mai multe aici</Text>
-    <Text style={styles.text}>⬇</Text>
-
-
-    <Link 
-      href="/about"
-      style={styles.buttonContainer}
-      asChild
-    ><Text style={styles.buttonText}>Despre mine</Text>
-    </Link>
-
     </ThemedView>
-
   )
 }
 
-export default Home
+export default educatie
 
 const styles = StyleSheet.create({
   container: {

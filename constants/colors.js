@@ -13,7 +13,7 @@ export const Colors = {
   },
 
   light: {
-    text: "#625f72",
+    text: "#47464aff",
     title: "#201e2b",
     background: "#e0def8",
     navBackground: "#e8e7ef",
