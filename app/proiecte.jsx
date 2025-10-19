@@ -109,6 +109,7 @@ const styles = StyleSheet.create({
     fontWeight: '500'
   },
   subtitleCompletion: {
+      lineHeight: 24,
      paddingLeft: 10,
       textAlign: 'left',
     width: '100%',
@@ -116,7 +117,8 @@ const styles = StyleSheet.create({
     fontSize: 15
   },
   text: {
-     paddingLeft: 10,
+    lineHeight: 24,
+    paddingLeft: 10,
     paddingTop: 15,
     textAlign: 'left',
     width: '100%',
