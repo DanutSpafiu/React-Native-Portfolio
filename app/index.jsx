@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import {Link, Stack} from 'expo-router'
 import { Colors } from '../constants/colors'
 import ThemedView from '../components/ThemedView'
+import pozaSala1 from '../assets/gym1.jpeg'
+import pozaSala2 from '../assets/gym2.jpeg'
 
 const Home = () => {
   const colorScheme = useColorScheme();
