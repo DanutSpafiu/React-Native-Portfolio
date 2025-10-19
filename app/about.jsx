@@ -33,6 +33,13 @@ const About = () => {
           ><Text style={styles.buttonText}>Pasiuni</Text>
           </Link>
 
+           <Link 
+            href="/contact"
+            style={styles.buttonContainer}
+            asChild
+          ><Text style={styles.buttonText}>Contact</Text>
+          </Link>
+
           {/**
       <Link 
       style={styles.link}

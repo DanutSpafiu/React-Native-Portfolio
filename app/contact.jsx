@@ -10,10 +10,10 @@ const Contact = () => {
   return (
     <ThemedView style={styles.container}>
 
-      <Text style={[styles.text, {color: theme.text, padding:3}]}>Contact Page</Text>
-      <Text style={[styles.text, {color: theme.text, padding:3}]}>Phone: +40 768 170 875</Text>
-      <Text style={[styles.text, {color: theme.text, padding:3}]}>Email: spafiud@gmail.com</Text>
-      <Text style={[styles.text, {color: theme.text, padding:3}]}>LinkedIn: Danut Spafiu</Text>
+      <Text style={[styles.text, {color: theme.text, paddingBottom:8, fontSize:22}]}>😃 Ma gasesti aici:</Text>
+      <Text style={[styles.text, {color: theme.text, padding:5}]}>Phone: +40 768 170 875</Text>
+      <Text style={[styles.text, {color: theme.text, padding:5}]}>Email: spafiud@gmail.com</Text>
+      <Text style={[styles.text, {color: theme.text, padding:5}]}>LinkedIn: Danut Spafiu</Text>
       
 
       <Link 
@@ -32,11 +32,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     },
+    
   text: {
     fontFamily: 'Times New Roman',
     fontWeight: 'bold',
     fontSize: 18,
     padding: 10
+  },
+  subtitle: {
+    paddingLeft: 10,
+    paddingTop: 15,
+    textAlign: 'left',
+    width: '100%',
+    fontFamily: 'Inter',
+    fontSize: 15,
+    fontWeight: '500'
   },
  link: {
     marginTop: 20,
