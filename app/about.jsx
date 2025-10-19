@@ -56,9 +56,9 @@ const styles = StyleSheet.create({
 
   },
   text: {
-    fontFamily: 'Arial',
-    fontWeight: 'bold',
-    fontStyle:'italic',
+    fontFamily: 'Inter',
+    fontWeight: '600',
+    fontStyle: 'italic',
     fontSize: 18,
     padding: 10 
   },
@@ -83,7 +83,8 @@ const styles = StyleSheet.create({
   fontWeight: '600',
   fontSize: 16,
   textDecorationLine: 'underline',
-  fontFamily: 'Arial',
-  paddingTop: 0
+  fontFamily: 'Inter',
+  paddingTop: 0,
+  fontStyle: 'italic'
   }
 })

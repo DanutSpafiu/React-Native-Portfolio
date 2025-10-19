@@ -8,7 +8,7 @@ import ThemedView from '../components/ThemedView'
 const Home = () => {
   const colorScheme = useColorScheme();
   const theme = Colors[colorScheme] ?? Colors.light
-  
+
   return (
     <ThemedView style={styles.container}>
       
@@ -17,9 +17,9 @@ const Home = () => {
       style={styles.img}
       />
      
-     <Text style={[styles.title, {color: theme.title}]}>Salut, eu sunt Danut Spafiu!</Text>
-    <Text style={styles.subtitle}>Sunt student in anul 2 la Facultatea de Automatica si Calculatoare si sunt pasionat de mobile development.</Text>
-    <Text style={styles.text}>Dar povestesc mai multe aici</Text>
+     <Text style={[styles.title, {color: theme.title}]}>Salut, sunt Danut Spafiu!</Text>
+    <Text style={styles.subtitle}>Sunt student in anul 2 la Facultatea de Automatica si Calculatoare si sunt pasionat de web si mobile development.</Text>
+    <Text style={styles.text}>Dar povestesc mai multe aici:</Text>
     <Text style={styles.text}>⬇</Text>
 
 
@@ -45,10 +45,11 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'System',
     fontWeight: 'bold',
-    fontSize: 18,
-    marginBottom:20
+    fontSize: 19,
+    marginBottom:20,
+    fontStyle: 'italic',
+    fontFamily: 'Inter'
   },
   img: {
     marginVertical: 20,
@@ -58,19 +59,21 @@ const styles = StyleSheet.create({
   },
    link: {
     padding: 5,
-    fontFamily: 'Arial',
     borderBottomWidth: 1,
     marginTop:10
   },
   subtitle: {
+    fontFamily: 'Inter',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: 13.5,
+    fontSize: 14.5,
     textAlign: 'center',
     paddingHorizontal: 40
   },
   text: {
-    paddingTop: 12
+    paddingTop: 12,
+    fontFamily: 'Inter',
+    paddingBottom: 0
   },
  buttonContainer: {
   paddingHorizontal: 30,
@@ -82,7 +85,7 @@ const styles = StyleSheet.create({
   fontWeight: '600',
   fontSize: 16,
   textDecorationLine: 'underline',
-  fontFamily: 'Arial',
+  fontFamily: 'Inter',
   paddingTop: 0
   }
 })
